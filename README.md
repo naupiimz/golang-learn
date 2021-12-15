@@ -1,2 +1,2 @@
 # golang-learn
-my progress of learning golang
+My progress of learning golang
