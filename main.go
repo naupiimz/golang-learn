@@ -122,10 +122,28 @@ func kondisi() {
 
 	switch result {
 	case 8:
-		fmt.Printf("perfect")
+		fmt.Printf("perfect \n")
 	case 7:
-		fmt.Printf("awesome")
+		fmt.Printf("awesome \n")
 	default:
-		fmt.Printf("not bad")
+		fmt.Printf("not bad \n")
+	}
+
+	//implementasi fallthrough dalam switch
+	var nilai = 6
+
+	switch {
+	case nilai == 8:
+		fmt.Println("perfect")
+	case (nilai < 8) && (nilai > 3):
+		fmt.Println("awesome")
+		fallthrough
+	case nilai < 5:
+		fmt.Println("bad")
+	default:
+		{
+			fmt.Println("good")
+			fmt.Println("keep up")
+		}
 	}
 }
