@@ -116,4 +116,16 @@ func kondisi() {
 	} else {
 		fmt.Printf("%.1f%s not bad!\n", percent, "%")
 	}
+
+	//switch case, dapat menampung lebih dari 1 kondisi
+	var result = 6
+
+	switch result {
+	case 8:
+		fmt.Printf("perfect")
+	case 7:
+		fmt.Printf("awesome")
+	default:
+		fmt.Printf("not bad")
+	}
 }
