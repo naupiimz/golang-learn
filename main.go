@@ -18,6 +18,8 @@ func main() {
 	jenisoperator()
 	fmt.Println("")
 	kondisi()
+	fmt.Println("")
+	perulangan()
 }
 
 func variabel() {
@@ -145,5 +147,43 @@ func kondisi() {
 			fmt.Println("good")
 			fmt.Println("keep up")
 		}
+	}
+}
+
+func perulangan() {
+	//keyword for
+	for i := 0; i < 5; i++ {
+		fmt.Println("Angka", i)
+	}
+
+	//hanya kondisi
+	var e = 0
+	for e < 5 {
+		fmt.Println("e", e)
+		e++
+	}
+
+	//tanpa kondisi
+	var u = 0
+	for {
+		fmt.Println("u", u)
+		u++
+
+		if u == 5 {
+			break
+		}
+	}
+
+	//for range
+	for a := 1; a <= 10; a++ {
+		if a%2 == 1 {
+			continue
+		}
+
+		if a > 8 {
+			break
+		}
+
+		fmt.Println("a", a)
 	}
 }
