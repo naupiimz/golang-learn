@@ -20,6 +20,8 @@ func main() {
 	kondisi()
 	fmt.Println("")
 	perulangan()
+	fmt.Println("")
+	strukturdata()
 }
 
 func variabel() {
@@ -186,4 +188,13 @@ func perulangan() {
 
 		fmt.Println("a", a)
 	}
+}
+
+func strukturdata() {
+	//array
+	var names [4]string
+	names[0] = "john"
+	names[1] = "doe"
+
+	fmt.Println(names[0], names[1])
 }
