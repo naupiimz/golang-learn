@@ -197,4 +197,5 @@ func strukturdata() {
 	names[1] = "doe"
 
 	fmt.Println(names[0], names[1])
+	//inisialisasi nilai bisa dilakukan diawal ataupun tidak
 }
