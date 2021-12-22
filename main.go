@@ -198,4 +198,9 @@ func strukturdata() {
 
 	fmt.Println(names[0], names[1])
 	//inisialisasi nilai bisa dilakukan diawal ataupun tidak
+
+	//array horizontal
+	var fruits = [4]string{"bnana", "cashew", "rhino", "dino"}
+	fmt.Println(fruits)
+
 }
