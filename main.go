@@ -203,4 +203,7 @@ func strukturdata() {
 	var fruits = [4]string{"bnana", "cashew", "rhino", "dino"}
 	fmt.Println(fruits)
 
+	//multidimensi array
+	var num1 = [2][3]int{[3]int{3, 2, 2}, [3]int{4, 5, 6}}
+	fmt.Println(num1)
 }
