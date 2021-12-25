@@ -1,19 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"golang-learn/calculation"
-	"golang-learn/multiplier"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("reset")
 
-	result := calculation.Add(12312412, 19484124)
+	title := "golang is the best"
 
-	result2 := multiplier.Multiply(12123, 124499)
+	for _, val := range title {
+		switch string(val) {
+		case "a", "i", "u", "e", "o":
+			fmt.Println(string(val))
+		}
+	}
 
-	fmt.Println(result)
-
-	fmt.Println(result2)
 }
