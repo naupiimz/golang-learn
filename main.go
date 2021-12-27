@@ -24,10 +24,52 @@ func main() {
 	// fmt.Println(languages)
 	// fmt.Println(len(languages))
 
-	var consolesG []string
+	// var consolesG []string
 
-	consolesG = append(consolesG, "Xbox360")
-	consolesG = append(consolesG, "Switch Pro")
+	// consolesG = append(consolesG, "Xbox360")
+	// consolesG = append(consolesG, "Switch Pro")
 
-	fmt.Println(consolesG)
+	// fmt.Println(consolesG)
+
+	// myMap := map[string]string{}
+
+	// myMap["adam"] = "adam"
+
+	// fmt.Println(myMap)
+
+	// value, isExist := myMap["adam"]
+
+	// if isExist {
+	// 	fmt.Println(value)
+	// } else {
+	// 	fmt.Println("doesnt exist")
+	// }
+
+	// students := []map[string]string{
+	// 	{"name": "upi", "score": "good"},
+	// 	{"name": "ray", "score": "bad"},
+	// }
+
+	// for _, v := range students {
+	// 	fmt.Println(v["name"])
+	// 	fmt.Println(v["score"])
+	// }
+
+	scores := [8]int{100, 80, 75, 92, 70, 93, 88, 67}
+	goodScores := []int{}
+
+	i := 0
+
+	for _, v := range scores {
+		i = i + v
+
+		if v >= 90 {
+			goodScores = append(goodScores, v)
+		}
+	}
+
+	result := float64(i) / float64(len(scores))
+
+	fmt.Println(result)
+	fmt.Println(goodScores)
 }
