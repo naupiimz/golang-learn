@@ -55,21 +55,35 @@ func main() {
 	// 	fmt.Println(v["score"])
 	// }
 
-	scores := [8]int{100, 80, 75, 92, 70, 93, 88, 67}
-	goodScores := []int{}
+	// scores := [8]int{100, 80, 75, 92, 70, 93, 88, 67}
+	// goodScores := []int{}
 
-	i := 0
+	// i := 0
 
-	for _, v := range scores {
-		i = i + v
+	// for _, v := range scores {
+	// 	i = i + v
 
-		if v >= 90 {
-			goodScores = append(goodScores, v)
-		}
+	// 	if v >= 90 {
+	// 		goodScores = append(goodScores, v)
+	// 	}
+	// }
+
+	// result := float64(i) / float64(len(scores))
+
+	// fmt.Println(result)
+	// fmt.Println(goodScores)
+
+	numarr := []int{2, 3, 4, 5, 6}
+
+	result := calculate(numarr)
+	fmt.Println(result)
+}
+
+func calculate(nums []int) int {
+	total := 0
+	for _, num := range nums {
+		total = total + num
 	}
 
-	result := float64(i) / float64(len(scores))
-
-	fmt.Println(result)
-	fmt.Println(goodScores)
+	return total
 }
