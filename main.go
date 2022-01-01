@@ -4,17 +4,21 @@ import (
 	"fmt"
 )
 
-func main() {
-	number := 5
-
-	fmt.Println(&number)
-	change(&number, 100)
-	fmt.Println(number)
-
+type Student struct {
+	ID   int
+	Name string
+	GPA  float32
 }
 
-func change(old *int, new int) int {
-	*old = new
-	fmt.Println(old)
-	return *old
+func (student *Student) graduate() {
+	student.Name = student.Name + " ST"
+}
+
+func main() {
+	student := Student{12, "yupoo", 3.14}
+	fmt.Println(student)
+
+	student.graduate()
+
+	fmt.Println(student)
 }
