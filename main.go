@@ -4,21 +4,23 @@ import (
 	"fmt"
 )
 
-type Student struct {
-	ID   int
-	Name string
-	GPA  float32
+type Gamer struct {
+	Name  string
+	Games []string
 }
 
-func (student *Student) graduate() {
-	student.Name = student.Name + " ST"
+func (gamer *Gamer) AddGame(game string) {
+	gamer.Games = append(gamer.Games, game)
 }
 
 func main() {
-	student := Student{12, "yupoo", 3.14}
-	fmt.Println(student)
+	gamer := Gamer{Name: "zelda"}
 
-	student.graduate()
+	gamer.AddGame("Yordle")
+	gamer.AddGame("Thrall")
+	gamer.AddGame("Puffcaps")
 
-	fmt.Println(student)
+	for _, games := range gamer.Games {
+		fmt.Println(games)
+	}
 }
